@@ -1,0 +1,54 @@
+{
+  // Display name for this crew
+  "name": "data_doctor_crew",
+
+  // Agents included in the crew
+  "agents": [
+    "data_quality_analyst",
+    "data_cleaning_specialist"
+  ],
+
+  // Tasks run in the order shown below
+  "tasks": [
+    {
+      // Task 1: inspect the original dataset
+      "name": "analyze_sales_data_task",
+
+      "description": "Use the data_quality_analysis tool to analyze sales_data.csv. Report only the verified facts returned by the tool. Do not invent, estimate, rename, correct, or add any rows, customer IDs, values, dates, statistics, or filenames.",
+
+      "expected_output": "A factual data quality report based only on the exact verified output returned by the data_quality_analysis tool.",
+
+      // Agent responsible for the task
+      "agent": "data_quality_analyst"
+    },
+
+    {
+      // Task 2: clean the dataset
+      "name": "clean_sales_data_task",
+
+      "description": "Execute the data_cleaning tool exactly once. The tool creates the verified files cleaned_sales_data.csv and cleaning_report.md. After the tool finishes, do not reproduce, rewrite, summarize, or invent any dataset rows or values. Return only the required confirmation sentence.",
+
+      "expected_output": "Cleaning completed successfully. The verified outputs are cleaned_sales_data.csv and cleaning_report.md.",
+
+      // Agent responsible for the task
+      "agent": "data_cleaning_specialist",
+
+      // Receive the output from Task 1
+      "context": [
+        "analyze_sales_data_task"
+      ]
+    }
+  ],
+
+  // Run tasks in sequence
+  "process": "sequential",
+
+  // Display detailed execution logs
+  "verbose": true,
+
+  // Memory is not required for this project
+  "memory": false,
+
+  // Default runtime inputs
+  "inputs": {}
+}

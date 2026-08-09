@@ -1,0 +1,9 @@
+customer_id,name,age,city,order_amount,order_date
+1,Ahmed,25,Riyadh,500,2026-01-10
+2,Sara,30,Jeddah,750,2026-01-11
+3,Noura,,riyadh,900,2026-01-12
+4,Khalid,300,Dammam,450,2026-01-13
+5,Lama,28,Riyadh,,2026-01-14
+5,Lama,28,Riyadh,,2026-01-14
+6,Fahad,35,JEDDAH,12000,wrong_date
+7,Maha,27,,680,2026-01-16

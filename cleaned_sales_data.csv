@@ -1,0 +1,8 @@
+﻿customer_id,name,age,city,order_amount,order_date
+1,Ahmed,25.0,Riyadh,500.0,2026-01-10
+2,Sara,30.0,Jeddah,750.0,2026-01-11
+3,Noura,28.0,Riyadh,900.0,2026-01-12
+4,Khalid,28.0,Dammam,450.0,2026-01-13
+5,Lama,28.0,Riyadh,715.0,2026-01-14
+6,Fahad,35.0,Jeddah,12000.0,
+7,Maha,27.0,Unknown,680.0,2026-01-16
