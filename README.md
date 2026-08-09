@@ -1,4 +1,5 @@
 # Data Doctor Agent
+This project was developed as part of SDAIA Academy's Advanced Agentic AI Systems Engineering Program.
 
 A multi-agent system for data quality analysis and automated data cleaning using CrewAI.
 
